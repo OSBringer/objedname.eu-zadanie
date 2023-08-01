@@ -27,9 +27,7 @@ const store = createStore({
       state.value.calendarDays = payload;
     },
     setOrders(state, payload) {
-      console.log(state.orders);
       state.orders = payload;
-      console.log(state.orders);
     },
   },
 });

@@ -76,16 +76,16 @@ function Settings() {
       </div>
       <div className="settingsType">
         <h1>Kalendar</h1>
-        <label htmlFor="xd">Zobraziť dni dopredu</label>
+        <label htmlFor="picker">Zobraziť dni dopredu</label>
         <input
           className="customInput react-time-picker react-time-picker--closed react-time-picker--enabled timePicker"
           onChange={(e) => setCalendarDaysAhead(parseInt(e.target.value))}
-          name="xd"
+          name="picker"
           max={5}
           min={1}
           defaultValue={calendarDaysAhead}
           type="number"
-          id="xd"
+          id="picker"
         ></input>
       </div>
       <Button onClick={handleSave} text="Uložiť" />

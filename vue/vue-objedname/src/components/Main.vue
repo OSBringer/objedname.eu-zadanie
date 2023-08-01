@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <header class="xd">
+    <header>
       <Navigation :page="page" :setPage="setPage" />
     </header>
     <div class="timed-orders-module">
@@ -52,7 +52,7 @@ const setPage = (newPage: string) => {
 
   width: 100%;
 }
-.xd {
+header {
   display: flex;
   justify-content: center;
   position: absolute;

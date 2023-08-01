@@ -11,7 +11,7 @@
 
   width: 100%;
 }
-.xd {
+header {
   display: flex;
   justify-content: center;
   position: absolute;

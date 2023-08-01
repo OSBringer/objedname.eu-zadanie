@@ -31,7 +31,7 @@
     </div>
     <div class="settingsType">
       <h1>Kalendar</h1>
-      <label for="xd">Zobraziť dni dopredu</label>
+      <label>Zobraziť dni dopredu</label>
       <input
         class="customInput"
         v-bind:value="store.state.value.calendarDays"

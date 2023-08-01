@@ -24,7 +24,7 @@ function App() {
   };
   return (
     <div>
-      <header className="xd">
+      <header>
         <Navigation page={page} setPage={setPage} />
       </header>
 
