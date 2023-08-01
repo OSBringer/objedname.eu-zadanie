@@ -11,9 +11,9 @@
 4. ```npm run dev``` 
   
 ### Time spent
-  -Študovanie zadania 
-   cca 2h
-  -React
-   cca 8h
-  -Vue
-    cca 11h
+  **Študovanie zadania**\
+   &nbsp;&nbsp;cca 2h\
+  **React**\
+  &nbsp; &nbsp;cca 8h\
+  **Vue**\
+   &nbsp; &nbsp;cca 11h
