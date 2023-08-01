@@ -1,0 +1,60 @@
+.timedOrdersView {
+  display: flex;
+  width: 100%;
+}
+
+.day-select-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  &.day {
+    width: 100%;
+    &.active {
+      background-color: #d3a245;
+    }
+
+    &.disabled {
+      background-color: red;
+    }
+  }
+}
+
+.time-select-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //   background-color: dimgray;
+  //   color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.time-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #cbcfd4;
+
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+  }
+  .success {
+    background-color: green;
+  }
+}

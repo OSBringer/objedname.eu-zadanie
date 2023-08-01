@@ -1,0 +1,8 @@
+understanding the asssignment
+ - 2h
+
+react 
+ - 8h
+ 
+vite
+ - 11h
