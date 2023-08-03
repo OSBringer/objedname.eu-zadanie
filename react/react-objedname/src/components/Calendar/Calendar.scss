@@ -1,6 +1,7 @@
 .timedOrdersView {
   display: flex;
   width: 100%;
+  flex-direction: column;
 }
 
 .day-select-row {

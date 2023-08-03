@@ -69,7 +69,6 @@ const handleSetOrder = () => {
   const orders = { ...store.state.orders };
   const index = findIndexOfTime(orders.Data, props.time);
   const selectedValue = selectedDelivery;
-  console.log("Selected value:", selectedValue);
   if (props.capacity < props.originalCapacity) {
     orders.Data[index].Capacity++;
     store.commit("setOrders", orders);

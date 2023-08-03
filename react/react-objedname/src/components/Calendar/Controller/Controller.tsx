@@ -39,7 +39,6 @@ function Controller(props) {
           setStartDate(prevDay);
         }}
         icon={<MdArrowBackIos />}
-        className="btn"
       />
       {/* Tu sa budu dni generovat podla toho kolko ich chceme na stranku z DeliveryMethod */}
       {dateArray.map((day, index) => (
@@ -48,6 +47,9 @@ function Controller(props) {
             onClick={() => {
               props.setActive(day[0]);
             }}
+            className={`day ${
+              day[0].getDate() === props.active.getDate() ? "active" : ""
+            }`}
             active={day[0].getDate() === props.active.getDate()}
             text={`${day[0].toLocaleDateString("sk-SK")} ${day[1]}`}
           />
@@ -60,7 +62,6 @@ function Controller(props) {
           setStartDate(nextDay);
         }}
         icon={<MdArrowForwardIos />}
-        className="btn"
       />
     </div>
   );

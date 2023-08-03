@@ -1,22 +1,36 @@
 .btn {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 0px solid #cbcfd4;
   width: 100%;
+
   background-color: #313a4d;
   color: white;
-  min-height: 8vh;
+
+  height: 7vh;
   position: relative;
 
   padding: 10px;
   border-radius: 10px;
+  &.day {
+    width: 100%;
+    &.active {
+      background-color: #d3a245;
+    }
+
+    &.disabled {
+      background-color: red;
+    }
+  }
   .active {
-    top: -10px;
-    right: -10px;
+    top: -8px;
+    right: -8px;
     position: absolute;
     color: #26c672;
+    font-size: 1.5rem;
     background-color: white;
     border-radius: 50%;
   }

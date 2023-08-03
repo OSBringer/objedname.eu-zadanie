@@ -18,7 +18,6 @@ export const settingsSlice = createSlice({
   },
   reducers: {
     setOppeningHours: (state, action) => {
-      console.log(action.payload);
       state.value.openingDays = action.payload;
     },
     setCalendarDays: (state, action) => {

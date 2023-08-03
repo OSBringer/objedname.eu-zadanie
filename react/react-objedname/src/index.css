@@ -17,8 +17,11 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  justify-content: center;
+  min-width: 50vw;
   min-height: 100vh;
-  padding-top: 80px;
+  padding-top: 100px;
+}
+.app {
+  width: 100%;
 }

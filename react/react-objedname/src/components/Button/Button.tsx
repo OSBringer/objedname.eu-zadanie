@@ -1,41 +1,18 @@
-<template>
-  <button @click="onClick" :class="['btn', className]">
-    {{ text }}
-    <span v-if="active">
+import React from "react";
+import "./Button.scss";
+import { MdCheck } from "react-icons/md";
 
-    </span>
-    <span>{{ icon }}</span>
-  </button>
-</template>
+function Button({ text, onClick, className, icon, active }) {
+  return (
+    <button onClick={onClick} className={`btn ${className}`}>
+      {text}
+      <span>{icon}</span>
 
-<script>
-import { AiFillCheckCircle } from "vue-icons/ai";
+      {active && !className?.includes("day") && <MdCheck className="active" />}
 
-export default {
-  props: {
-    text: {
-      type: String,
-      default: "",
-    },
-    className: {
-      type: String,
-      default: "",
-    },
-    active: {
-      type: Boolean,
-      default: false,
-    },
-    icon: {
-      // You may need to define the appropriate type here, depending on the icon library used
-      default: null,
-    },
-    onClick: {
-      type: Function,
-      default: () => {},
-    },
-  },
-  components: {
-    AiFillCheckCircle,
-  },
-};
-</script>
+      <span className={icon}></span>
+    </button>
+  );
+}
+
+export default Button;

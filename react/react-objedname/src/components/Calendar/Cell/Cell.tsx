@@ -24,7 +24,7 @@ function Cell(props: CellProps) {
   return (
     <div
       onClick={props.onClick}
-      style={{ backgroundColor: props.active ? "red" : "" }}
+      style={{ backgroundColor: props.active ? "#26c672" : "" }}
       className={`time-select`}
     >
       {props.time}
